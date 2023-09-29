@@ -43,6 +43,26 @@ Route::get('/checkout/complete-details', function () {
     return view('homepage.checkout-complete-details');
 });
 
+Route::get('/dashboard/address-details', function () {
+    return view('homepage.account-dashboard-address');
+});
+
+Route::get('/dashboard/account-details', function () {
+    return view('homepage.account');
+});
+
+Route::get('/dashboard/order-details', function () {
+    return view('homepage.orders');
+});
+
+Route::get('/dashboard/payment-details', function () {
+    return view('homepage.payments');
+});
+
+Route::get('/dashboard/user-details', function () {
+    return view('homepage.user');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
