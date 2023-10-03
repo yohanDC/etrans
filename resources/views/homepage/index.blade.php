@@ -194,7 +194,7 @@
     @include('partials.support-info')
     <!--end support info-->
     <!--start News-->
-    @include('partials.start-news')
+{{--    @include('partials.start-news')--}}
     <!--end News-->
     <!--start brands-->
     @include('partials.bands')
@@ -204,5 +204,5 @@
     <!--end bottom products section-->
 @endsection
 @push('scripts')
-    <script src="assets/js/index.js"></script>
+    <script src="{{asset('assets/js/index.js')}}"></script>
 @endpush
